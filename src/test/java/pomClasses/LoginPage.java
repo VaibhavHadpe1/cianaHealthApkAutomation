@@ -40,11 +40,12 @@ public class LoginPage
 
     public void opencianahealth()
     {
+        Utility.explicitlyWait(cianahealthApplication,driver,10);
         cianahealthApplication.click();
         logger.info("Clicked on cianahealth application");
     }
     public void enterValidMobileNumber() throws IOException, InterruptedException {
-        Utility.explicitlyWait(mobileNumberField,driver,5);
+        Utility.explicitlyWait(mobileNumberField,driver,10);
         mobileNumberField.sendKeys(Utility.readDataFromPropertyFile("validMobileNumber"));
         logger.info("Valid mobile number entered");
     }

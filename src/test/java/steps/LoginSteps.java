@@ -13,8 +13,6 @@ public class LoginSteps {
     AndroidDriver driver;
     LoginPage loginPage;
     public LoginSteps() throws InterruptedException {
-
-        Utility.setDriver();
         driver=Utility.getDriver();
         loginPage=new LoginPage(driver);
     }
@@ -36,8 +34,8 @@ public class LoginSteps {
     public void the_user_should_be_redirected_to_switch_profile_screen() {
         loginPage.selectPrimaryUser();
     }
-    @Then("the user should see a dashboard")
-    public void the_user_should_see_a_dashboard() {
+    @Then("the user present on dashboard")
+    public void the_user_present_on_dashboard() {
         loginPage.verifyUserIsOnDashboard();
     }
 

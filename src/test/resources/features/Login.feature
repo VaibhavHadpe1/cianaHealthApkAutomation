@@ -10,4 +10,4 @@ Feature: User Login
     When the user enters their valid username and password
     And clicks the Sign In button
     Then the user should be redirected to switch profile screen
-    And the user should see a dashboard
+    And the user present on dashboard

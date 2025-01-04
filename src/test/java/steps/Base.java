@@ -12,8 +12,8 @@ public class Base
     public static AndroidDriver driver;
 
     public static void setDriver() throws InterruptedException {
-        EmulatorLauncher.startEmulator();
-        AppiumServerClass.startAppium();
+//        EmulatorLauncher.startEmulator();
+//        AppiumServerClass.startAppium();
 
         UiAutomator2Options options = new UiAutomator2Options();
         options.setDeviceName("Pixel_7_API_33")
