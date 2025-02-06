@@ -5,10 +5,12 @@ Feature: Book Appointment
   I want to be able to log in to cianahealth
   So that I can Book Appointment successfully
 
+  @TC1
   Scenario: To verify that the Consultation button is displayed on the dashboard footer.
     Given the user present on dashboard
     Then the Consultation button should be displayed on the dashboard footer
 
+  @TC2
   Scenario: To verify that clicking the Consultation button navigates the user to the Look for a Doctor screen.
     Given the user present on dashboard
     When the consultation button is displayed in the dashboard footer

@@ -51,17 +51,5 @@ public class AppiumServerClass
         }
     }
 
-//    public static void main(String[] args) throws InterruptedException {
-//        Thread.sleep(5000);
-//        //startAppium();
-//        stopAppium();
-//    }
-
-//    @After
-//    public void tearDown() throws InterruptedException {
-//        // Stop the Appium server after all test
-//        stopAppium();
-//    }
-
 
 }
